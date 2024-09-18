@@ -32,7 +32,7 @@ p {
 # Como citar {-}  
 
 ***   
-<p>ONSV; UFPR (2024). Avaliação do impacto da obrigatoriedade de Airbag e freio ABS na severidade dos sinistros. Observatório Nacional de Segurança Viária e Universidade Federal do Paraná. Disponível em: **MUDAR**  
+<p>ONSV; UFPR (2024). Avaliação do impacto da obrigatoriedade de Airbag e freio ABS na severidade dos sinistros. Observatório Nacional de Segurança Viária e Universidade Federal do Paraná. Disponível em: https://arthurnoguti.github.io/Avaliacao-do-impacto-da-obrigatoriedade-de-Airbag-e-freio-ABS-na-severidade-dos-sinistros-/  
 
 
 :::{layout-ncol="2"}
