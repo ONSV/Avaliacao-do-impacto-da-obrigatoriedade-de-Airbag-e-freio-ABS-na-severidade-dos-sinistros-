@@ -1,9 +1,11 @@
+# Bibliotecas a serem utilizadas, caso não as possua instalado, faça install.packages("nome_da_biblioteca") ----
 library(tidyverse)
 library(onsvplot)
 library(FactoMineR)
 library(factoextra)
 
 # Puxando os dados ----
+# informando o link que contém as bases e guardando em uma variável
 url2007 <- "https://github.com/ONSV/prfdata/raw/main/data-raw/acidentes2007.zip"
 url2008 <- "https://github.com/ONSV/prfdata/raw/main/data-raw/acidentes2008.zip"
 url2014 <- "https://github.com/ONSV/prfdata/raw/main/data-raw/acidentes2014.zip"
@@ -17,6 +19,7 @@ url2021 <- "https://github.com/ONSV/prfdata/raw/main/data-raw/acidentes2021.zip"
 url2022 <- "https://github.com/ONSV/prfdata/raw/main/data-raw/acidentes2022.zip"
 url2023 <- "https://github.com/ONSV/prfdata/raw/main/data-raw/acidentes2023.zip"
 
+# instalando a base pela variável criado com o link
 download.file(url2007, "acidentes2007.zip")
 download.file(url2008, "acidentes2008.zip")
 download.file(url2014, "acidentes2014.zip")
@@ -30,6 +33,7 @@ download.file(url2021, "acidentes2021.zip")
 download.file(url2022, "acidentes2022.zip")
 download.file(url2023, "acidentes2023.zip")
 
+# descompactando as bases de dados 
 unzip(zipfile = "acidentes2007.zip")
 unzip(zipfile = "acidentes2008.zip")
 unzip(zipfile = "acidentes2014.zip")
@@ -43,6 +47,7 @@ unzip(zipfile = "acidentes2021.zip")
 unzip(zipfile = "acidentes2022.zip")
 unzip(zipfile = "acidentes2023.zip")
 
+# lendo as bases de dados que estaram descompactadas em sua máquina
 acidentes2007 <- read.csv('/home/arthurhideionoguti/ONSV/Avaliacao-do-impacto-da-obrigatoriedade-de-Airbag-e-ABS-na-severidade-dos-sinistros-/Data-raw/acidentes2007.csv' )
 acidentes2008 <- read.csv('/home/arthurhideionoguti/ONSV/Avaliacao-do-impacto-da-obrigatoriedade-de-Airbag-e-ABS-na-severidade-dos-sinistros-/Data-raw/acidentes2008.csv' )
 acidentes2014 <- read.csv('/home/arthurhideionoguti/ONSV/Avaliacao-do-impacto-da-obrigatoriedade-de-Airbag-e-ABS-na-severidade-dos-sinistros-/Data-raw/acidentes2014.csv' )
@@ -170,7 +175,7 @@ dados_airbag <- bind_rows(dados_airbag_antes, dados_airbag_depois)
 dados_abs # Não muda nada, seleciona todos
 
 table(dados_airbag$tipo_acidente)
-dados_abs <- dados_abs %>% 
+dados_abs <- dados_abs %>%                          #Arrumando as variáveis e unindo casos semelhantes
   mutate(tipo_acidente = dplyr::recode(tipo_acidente,
                                        "Atropelamento de animal" = "Atropelamento de Animal",
                                        "Atropelamento de pessoa" = "Atropelamento de Pedestre",
@@ -373,7 +378,7 @@ Prop_ef_airbag_depois <-
 Prop_ef_abs <- bind_rows(Prop_ef_abs_antes,Prop_ef_abs_depois)
 Prop_ef_airbag <- bind_rows(Prop_ef_airbag_antes,Prop_ef_airbag_depois)
 
-Prop_ef_abs %>% 
+Prop_ef_abs %>%                                                 # Gráfico de barras aqui
   ggplot(aes(x = reorder(Var1, proporção), y = proporção))+
   geom_col(fill = "orange2", color = "black")+
   geom_text(aes(y = proporção, label = scales::percent(proporção)), vjust = -0.5,
@@ -448,10 +453,10 @@ airbag_ca <- data.frame(res_CA_airbag$var$coord, variavel = c("estado físico","
 
 
 
-ggplot(data = abs_ca, aes(x = Dim.1, y = Dim.2, color = variavel))+
+ggplot(data = abs_ca, aes(x = Dim.1, y = Dim.2, color = variavel))+  
   geom_point()+
   geom_label(label = rownames(abs_ca), label.size = 0.5, position = position_nudge(y = 0.15))+
-  labs(x = "Dim1 (28.6%)", y = "Dim2 (25%)")+
+  labs(x = "Dim1 (28.6%)", y = "Dim2 (25%)")+   #Note que esse valor do Dim1 e Dim2 devem ser tirados do fviz_mca_biplot
   geom_hline(yintercept = 0, colour = "black", lty="longdash") + 
   geom_vline(xintercept = 0, colour = "black", lty="longdash") + 
   theme_onsv()
@@ -464,10 +469,8 @@ ggplot(data = airbag_ca, aes(x = Dim.1, y = Dim.2, color = variavel))+
   geom_vline(xintercept = 0, colour = "black", lty="longdash") + 
   theme_onsv()
 
-# Verificar com professor se iremos adicionar essa ANACOR no relatório ou não 
-
-
-# Porcentagem de veículos com Airbag e ABS em 2022 e 2023 ----
+# Porcentagem de veículos com Airbag e ABS em 2022 e 2023 ---- 
+# Esses scripts não foram incluidos no relatório final, mas servem de curiosidade para verificar na base
 dados22 <- dados %>% 
   filter(ano == 2022) %>%
   filter(tipo_veiculo %in% c("Autom\xf3vel","Utilit\xe1rio"))
