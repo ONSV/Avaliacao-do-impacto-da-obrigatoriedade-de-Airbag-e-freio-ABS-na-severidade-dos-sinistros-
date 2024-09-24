@@ -15,7 +15,7 @@ p {
 
 <p>O objetivo deste documento é avaliar o impacto da obrigatoriedade do Airbag e ABS na severidade dos sinistros de trânsito. A pesquisa utilizou dados de sinistros nas rodovias federais brasileiras disponibilizados pela da Polícia Rodoviária Federal. 
 
-# Estudos sobre o impacto de Airbags
+## Estudos sobre o impacto de Airbags
 
 <p>Um estudo baseado meta-análise realizado por Høye (2010) avaliou em diversos países os efeitos dos Airbags frontais nas mortes de condutores com e sem cinto de segurança, as variáveis incluíam veículos de diferentes portes e variados tipos de Airbags. Os resultados indicaram uma redução de 22% nas mortes nos sinistros em geral e uma redução de 18% para as colisões frontais com o uso de Airbag associado ao cinto de segurança. No entanto, não foi observada qualquer redução global da mortalidade entre os condutores sem cinto de segurança e, em alguns casos, o risco de mortalidade aumentou, especialmente em sinistros sem colisão enfatizando assim, a importância do controle das variáveis observadas, como o uso do cinto de segurança e a direção do impacto do veículo para avaliar com maior precisão eficácia dos Airbags como item de segurança veicular.  
 
@@ -41,7 +41,7 @@ p {
 
 <p>Através da coleta de informações de sinistros no banco de dados da Swedish Transport Administration, Strandroth (2015) fez a análise dos dados que continham fatalidades de passageiros na Suécia entre 2000 e 2010, centrando-se no desenvolvimento e validação de um método preditivo para avaliar a eficácia das intervenções de segurança rodoviária implementadas até 2010 usou também fontes externas como o Serviço Meteorológico Sueco e O Instituto Hidrológico para levar em conta fatores ambientais que afetam os resultados dos acidentes além de outros fatores contribuintes como velocidade, fluxo de tráfego e comportamento do motorista. Ao comparar os resultados estimados com os resultados reais, o autor descobriu uma redução prevista de mortes de 41% entre 2000 e 2010, porém a redução real observada foi de 53%, mostrando assim, a eficácia das intervenções de segurança rodoviária implementadas durante esse período.  
 
-# Estudos sobre o impacto de ABS  
+## Estudos sobre o impacto de ABS  
 
 <p>Nos Estados Unidos, Bhalla e Gleason (2020) desenvolveram um estudo com o objetivo de avaliar o impacto da implementação de tecnologias de segurança veicular na América Latina e no Caribe para reduzir mortes e lesões no trânsito. A metodologia envolveu o uso de dados sobre mortalidade e sinistros de vários países da região e a estimativa dos benefícios da difusão das tecnologias de segurança veicular em termos da redução da mortalidade e do indicador DALYs (Disability-Adjusted Life Years). Especificamente, o uso do controle eletrônico de estabilidade juntamente com os freios ABS poderia resultar em 19,40% menos mortes e um indicador DALYs 17% menor. Já o uso dos Airbags mostraram que, embora eles tenham benefícios em termos de melhoria da segurança do veículo, os seus efeitos não foram tão substanciais como o citado anteriormente. 
 
