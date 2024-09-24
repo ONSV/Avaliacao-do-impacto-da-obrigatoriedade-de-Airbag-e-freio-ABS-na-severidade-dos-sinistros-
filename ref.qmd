@@ -1,0 +1,46 @@
+<style>
+p {
+  text-align: justify;  
+}
+</style> 
+
+# Bibliografia {-}
+
+<p>BHALLA, K.;GLEASON, K. Effects of vehicle safety design on road traffic deaths, injuries, and public health burden in the Latin American region: a modelling study. **The lancet**. Vol 8. 2020.  
+
+<p>Høye, A. Are airbags a dangerous safety measure? A meta-analysis of the effects of frontal airbags on driver fatalities. **Elsevier**. Oslo, Norway. 2010.  
+
+<p>Kennerly H. Digges (2024) Summary of influences that led to introduction of frontal airbags on US passenger vehicles, Traffic Injury Prevention, 25:3, 237-248, DOI: 10.1080/15389588.2024.2317410  
+
+<p>SAMANTRAY, S.; PARASHAR, S. Airbag used in automobile. **Elsevier**. India. 2021.
+
+<p> David C. Viano (2024) History of airbag safety benefits and risks, Traffic Injury Prevention, 25:3, 268-287, DOI: 10.1080/15389588.2024.2315889  
+
+<p>DZINYELA, R. *et al*. A multi-year statistical analysis of driver injury severities in  single-vehicle freeway crashes with and without airbags deployed. **Elsevier**. USA. 2024.
+
+<p>ASADINIA, N. *et al*. Sensitivity analysis and optimization for occupant safety in automotive frontal crash test. **Latin American Journal of Solids and Structures**. 2018.
+
+<p>RADU, A. I. *et al*. Study regarding the influence of airbag deployment time on the occupant injury level during a frontal vehicle collision. Romania. 2018.
+
+<p>AHMAD. Y. *et al*. Comparing Occupant Injury in Vehicles Equipped with and without Frontal Airbag. **Journal of the Society os Automotive Engineers Malaysia**. Malaysia. 2017.
+
+<p>PADMANABAN, J. EYGES, V. STUDY OF AIRBAG EFFECTIVENESS IN HIGH SEVERITY FRONTAL CRASHES. USA. 2009.  
+
+<p>INTAS, G. STERGIANNIS, P. How safe are the airbags? A review of literature. **Health Science Journal**. Volume 5. 2011.  
+
+<p>BHASIN, K. Airbags for Safety System in Automobile Engineering. **TRANS STELLAR**. 2020.  
+
+<p>STRANDROTH, J. Validation of a method to evaluate future impact of road safety interventions, a comparison between fatal passenger car crashes in Sweden 2000 and 2010. **Elsevier**. Sweden. 2015.  
+
+<p>JITESH, S. Antilock Braking System (ABS). **International Journal of Mechanical Engineering and Robotics Research**. India. Vol 3. 2014.  
+
+<p>Khorasani-Zavareh et al.: Antilock braking system effectiveness in prevention of road traffic crashes in Iran. BMC Public Health 2013 13:439  
+
+<p>SHEWALE, N. S.; DEIVANATHAN, R. Modelling and Simulation of Anti-lock Braking System. **International Journal of Engineering and Technical Research**. Volume-7. 2017.  
+
+<p>KHACHANE, D.; SHRIVASTAV, A.Antilock Braking System and Its Advancement. **International Journal of Engineering and Technical Research**. India. Volume 3. 2016.  
+
+<p>ZULHILMI, M. *et al*. Experimental Study on the Effect of Emergency Braking without Anti-Lock Braking System to Vehicle Dynamics Behaviour. **International Journal of Automotive and Mechanical Engineering**. Vol 17. Malaysia. 2020.  
+
+<p>VIRAMGAMA, D. Intelligent Vehicle Safety Technology: Anti-lock Braking System (ABS) and its Advancements. **International Research Journal of Engineering and Technology**. Volume 6. India. 2019.  
+

@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Arthur Hideio Noguti">
-<meta name="author" content="Dr.&nbsp;Jorge Tiago Bastos">
 
-<title>Avaliação do impacto da obrigatoriedade de Air bag e freio ABS na severidade dos sinistros</title>
+<title>Avaliação do impacto da obrigatoriedade de Air bag e freio ABS na severidade dos sinistros - 2&nbsp; Metodologia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./introducao.html" rel="next">
+<link href="./resultados.html" rel="next">
+<link href="./introducao.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,10 +70,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="Avaliação do impacto da obrigatoriedade de Air bag e freio ABS na severidade dos sinistros">
+<meta name="twitter:title" content="Avaliação do impacto da obrigatoriedade de Air bag e freio ABS na severidade dos sinistros - 2&nbsp; Metodologia">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar floating">
@@ -86,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Resumo</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./metodologia.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodologia</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -116,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Resumo</span></a>
   </div>
 </li>
@@ -128,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./metodologia.html" class="sidebar-item-text sidebar-link">
+  <a href="./metodologia.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodologia</span></span></a>
   </div>
 </li>
@@ -160,10 +158,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#resumo" id="toc-resumo" class="nav-link active" data-scroll-target="#resumo">Resumo</a></li>
-  <li><a href="#highlights" id="toc-highlights" class="nav-link" data-scroll-target="#highlights">Highlights</a></li>
-  <li><a href="#sobre-o-observatório" id="toc-sobre-o-observatório" class="nav-link" data-scroll-target="#sobre-o-observatório">Sobre o Observatório</a></li>
-  <li><a href="#como-citar" id="toc-como-citar" class="nav-link" data-scroll-target="#como-citar">Como citar</a></li>
+  <li><a href="#seleção-do-período-de-análise" id="toc-seleção-do-período-de-análise" class="nav-link active" data-scroll-target="#seleção-do-período-de-análise"><span class="header-section-number">2.1</span> Seleção do período de análise</a></li>
+  <li><a href="#seleção-dos-tipos-de-veículos" id="toc-seleção-dos-tipos-de-veículos" class="nav-link" data-scroll-target="#seleção-dos-tipos-de-veículos"><span class="header-section-number">2.2</span> Seleção dos tipos de veículos</a></li>
+  <li><a href="#seleção-do-ano-de-fabricação" id="toc-seleção-do-ano-de-fabricação" class="nav-link" data-scroll-target="#seleção-do-ano-de-fabricação"><span class="header-section-number">2.3</span> Seleção do ano de fabricação</a></li>
+  <li><a href="#seleção-dos-tipos-de-sinistros" id="toc-seleção-dos-tipos-de-sinistros" class="nav-link" data-scroll-target="#seleção-dos-tipos-de-sinistros"><span class="header-section-number">2.4</span> Seleção dos tipos de sinistros</a></li>
+  <li><a href="#seleção-dos-ocupantes" id="toc-seleção-dos-ocupantes" class="nav-link" data-scroll-target="#seleção-dos-ocupantes"><span class="header-section-number">2.5</span> Seleção dos ocupantes</a></li>
+  <li><a href="#seleção-do-estado-físico-das-vítimas" id="toc-seleção-do-estado-físico-das-vítimas" class="nav-link" data-scroll-target="#seleção-do-estado-físico-das-vítimas"><span class="header-section-number">2.6</span> Seleção do estado físico das vítimas</a></li>
+  <li><a href="#análises-estatísticas" id="toc-análises-estatísticas" class="nav-link" data-scroll-target="#análises-estatísticas"><span class="header-section-number">2.7</span> Análises estatísticas</a></li>
   </ul>
 </nav>
     </div>
@@ -172,27 +173,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Avaliação do impacto da obrigatoriedade de Air bag e freio ABS na severidade dos sinistros</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Metodologia</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autores</div>
-    <div class="quarto-title-meta-contents">
-             <p>Arthur Hideio Noguti </p>
-             <p>Dr.&nbsp;Jorge Tiago Bastos <a href="https://orcid.org/0000-0001-6447-1504" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Data de Publicação</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">24 de setembro de 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -208,55 +196,50 @@ p {
   text-indent: 20px;   
 }
 </style>
-<section id="resumo" class="level1 unnumbered">
-<h1 class="unnumbered">Resumo</h1>
 <hr>
 <p>
-</p><p>A obrigatoriedade do airbag foi estabelecida pelo Conselho Nacional de Trânsito (CONTRAN) no ano de 2009, enquanto a do ABS foi no ano de 2011. Nos dois casos a obrigatoriedade foi aplicada de maneira gradativa, até o prazo final no ano de 2014, quando todos os veículos novos (fabricados no Brasil ou importados) com ao menos quatro rodas deveriam possuir airbag e freios ABS. O presente estudo tem por objetivo avaliar o impacto da obrigatoriedade do airbag e do freios ABS (Anti-lock Braking System) na severidade dos sinistros ocorridos em rodovias federais brasileiras. A pesquisa utilizou dados de sinistros nas rodovias federais brasileiras disponibilizados pela Polícia Rodoviária Federal. A partir dessa base de dados da PRF foram identificados os sinistros-alvo de cada contramedida e realizado a seleção das características das vítimas consideradas a fim de melhor isolar o possível impacto dos dispositivos estudados. Como resultado, identificou-se que a proporção dos sinistros com vítimas classificadas com estado físico “ileso” aumentou, enquanto “ferido leve”, “ferido grave” e “morto” diminuiram. Além disso, foi conduzido o teste do Qui-Quadrado para verificar a associação entre as variáveis “estado físico” e “período da obrigatoriedade (antes ou depois)”, o que resultou em uma associação estatisticamente significativa a um nível de confiança de 95%. Posteriormente, aplicou-se a técnica de Análise de Correspondência para a criação de mapas perceptuais para representar visualmente a associação entre as categorias das variáveis, de modo que as categorias “ileso” e “depois” apresentaram a maior associação. Como conclusão, tem-se que a obrigatoriedade do airbag e dos freios ABS contribuiu para reduzir a severidade dos sinsitros ocorridos nas rodovias federais brasileiras.</p>
-</section>
-<section id="highlights" class="level1 unnumbered">
-<h1 class="unnumbered">Highlights</h1>
-<hr>
-<ul>
-<li>Após a obrigatoriedade do airbag e dos freios, houve uma redução na proporção dos sinistros com vítimas feridas leves, grave ou mortas, enquanto houve um aumento na proporção das vítimas ilesas;</li>
-<li>A associação entre as variáveis “estado físico” e “período antes e depois da obrigatoriedade” resultou estatisticamente siginificativa a um nível de confiança de 95%;</li>
-<li>Há uma maior associação entre as categorias estado físico da vítima “ilesos” e “depois” do período de obrigatoriedade do airbag e dos freio;<br>
-</li>
-<li>A classificação “depois” da obrigatoriedade resultou mais próxima dos estados físicos “ferido grave” e “morto”.</li>
-</ul>
-</section>
-<section id="sobre-o-observatório" class="level1 unnumbered">
-<h1 class="unnumbered">Sobre o Observatório</h1>
-<hr>
+</p><p>A concepção da metodologia de análise dos dados baseou-se na intenção de melhor isolar o impacto dos dispositivos analisados na severidade dos sinistros a partir de uma etapa de seleção e tratamento dos dados que envolveu a seleção do período de análise, dos veículos considerados na análise (segundo tipo e ano de fabricação), dos sinistros-alvo das duas medidas, dos ocupantes dos veículos a serem considerados e do estado físico das vítimas.</p>
+<section id="seleção-do-período-de-análise" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="seleção-do-período-de-análise"><span class="header-section-number">2.1</span> Seleção do período de análise</h2>
 <p>
-</p><p>O Observatório Nacional de Segurança Viária é uma instituição social sem fins lucrativos, dedicada a desenvolver ações que contribuam efetivamente para a redução dos elevados índices de ocorrências no trânsito brasileiro. Com esse objetivo, um grupo de profissionais multidisciplinares decidiu reunir todo o seu conhecimento, experiência e motivação em um único projeto grandioso e desafiador: mobilizar a sociedade em prol de um trânsito mais seguro.</p>
+</p><p>Visando retirar da análise o período de transição da obrigatoriedade do Airbag e do ABS e obter períodos antes e depois da obrigatoriedade bem definidos, foram utilizados os dados de sinistros dos anos de 2007 e 2008 como período “antes” da obrigatoriedade e dados de 2014 a 2023 como período “depois” da obrigatoriedade.</p>
 </section>
-<section id="como-citar" class="level1 unnumbered">
-<h1 class="unnumbered">Como citar</h1>
-<hr>
+<section id="seleção-dos-tipos-de-veículos" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="seleção-dos-tipos-de-veículos"><span class="header-section-number">2.2</span> Seleção dos tipos de veículos</h2>
 <p>
-</p><p>ONSV; UFPR (2024). Avaliação do impacto da obrigatoriedade de Airbag e freio ABS na severidade dos sinistros. Observatório Nacional de Segurança Viária e Universidade Federal do Paraná. Disponível em: https://arthurnoguti.github.io/Avaliacao-do-impacto-da-obrigatoriedade-de-Airbag-e-freio-ABS-na-severidade-dos-sinistros-/</p>
-<div>
+</p><p>A base de dados fornecida pela PRF é relativa às vítimas dos sinistros de trânsito ocorridos em rodovias federais, em que cada observação representa uma vítima do sinistro. Para a avaliação em questão, foram considerados apenas os sinistros relativos a automóveis e utilitários, possibilitando uma base de comparação mais uniforme, tendo em vista que o porte do veículo pode impactar na severidade do sinistro.</p>
+</section>
+<section id="seleção-do-ano-de-fabricação" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="seleção-do-ano-de-fabricação"><span class="header-section-number">2.3</span> Seleção do ano de fabricação</h2>
+<p>
+Para o período “antes” (anos de 2007 e 2008), foram consideradas apenas as vítimas ocupantes de veículos com ano de fabricação entre 1946 e 2008. Foram removidos da análise as observações com anos de fabricação inconsistentes em razão de erros de digitação identificados na base de dados.<br>
 
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="left quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/onsv_logo_main.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-<div class="right quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/marca_UFPR.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
+</p><p>
+</p><p>Para o período “depois” (anos de 2014 a 2023) foram consideradas apenas as vítimas ocupantes de veículos com ano de fabricação a partir de 2014, de forma a assegurar a presença do Airbag e do ABS.</p>
+</section>
+<section id="seleção-dos-tipos-de-sinistros" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="seleção-dos-tipos-de-sinistros"><span class="header-section-number">2.4</span> Seleção dos tipos de sinistros</h2>
+<p>
+Tendo em vista a maior efetividade do Airbag para impactos frontais, foram consideradas apenas as vítimas de sinistros dos tipos colisão com objeto, colisaõ frontal, colisão traseira ou engavetamentos - todos caracterizados pelo impacto frontal.
+</p><p>
+</p><p>Para a análise do impacto do ABS foram considerados todos os tipos de sinistros, pois o melhor desempenho na frenagem pode contribuir para uma menor velocidade de impacto em qualquer tipo de sinistro.</p>
+</section>
+<section id="seleção-dos-ocupantes" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="seleção-dos-ocupantes"><span class="header-section-number">2.5</span> Seleção dos ocupantes</h2>
+<p>
+Em razão da obrigatoriedade do Airbag aplicar-se aos assentos dianteiros do veículo (condutor e carona) e de não haver distinção na base de dados da PRF entre passageiros dos bancos dianteiro e traseiro (não impactados pelo airbag), foram consideradas apenas as vítimas na posição de condutor.
+</p><p>
+</p><p>Para a análise do impacto do ABS foram considerados todos os ocupantes (condutores e passageiros), pois a redução da velocidade de impacto afeta o estado físico de todos os ocupantes do veículo.</p>
+</section>
+<section id="seleção-do-estado-físico-das-vítimas" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="seleção-do-estado-físico-das-vítimas"><span class="header-section-number">2.6</span> Seleção do estado físico das vítimas</h2>
+<p>
+</p><p>Foram consideradas as vítimas com estado físico ileso, ferido leve, ferido grave e fatal. No entanto, a fim de evitar o interferência de mudanças nos procedimentos de registro de sinistros sem vítima ocorridas em 2014 (quando possibilitou-se o registro dos sinistros pelo próprio envolvido no sinistro pelo e-DAT), foram consideradas apenas as vítimas ilesas em sinsitros com vítima.</p>
+</section>
+<section id="análises-estatísticas" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="análises-estatísticas"><span class="header-section-number">2.7</span> Análises estatísticas</h2>
+<p>
+</p><p>As análises estatísticas utilizadas neste estudo incluíram o teste Qui-Quadrado e a Análise de Correspondência (ANACOR). O teste Qui-Quadro é um teste de hipóteses que tem por finalidade avaliar a associação entre variáveis categóricas, enquanto a ANACOR foi aplicada para a visualização da associação entre as categorias das variáveis analisadas. Para realizar os testes foram utilizadas as funções <code>chisq.test()</code> e <code>MCA()</code> do software R.</p>
 
 
 </section>
@@ -673,10 +656,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./introducao.html" class="pagination-link" aria-label="Introdução">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./introducao.html" class="pagination-link" aria-label="Introdução">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./resultados.html" class="pagination-link" aria-label="Resultados">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Resultados</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

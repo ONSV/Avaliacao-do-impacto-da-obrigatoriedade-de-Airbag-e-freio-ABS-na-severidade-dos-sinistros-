@@ -1,67 +1,3 @@
-<style>
-p {
-  text-align: justify;  
-  text-indent: 20px;   
-}
-</style>  
-
-# Relatório  
-***  
-
-
-<p>Segundo o CONTRAN na resolução 311/09 acerca da obrigatoriedade do equipamento suplementar de segurança Air bag na frota total de veículos, assim como a 380/11 que visa estabelecer o mesmo critério de implementação acerca do ABS, determina que até o ano de 2014 todos veículos novos (que tenham ao menos quatro rodas) produzidos nacionalmente ou importados devem possuir tais equipamentos de segurança.  
-
-<p>Pautando-se no período de início da implementação até à frota total de veículos da categoria mencionada, os dados de sinistros em análise e suas especificidades foram extraídos da Base de Dados da PRF (Polícia Rodoviária Federal) e selecionados os anos de 2007 e 2008 para o estudo do período que antecede à obrigatoriedade, e 2014 à 2023 (selecionando apenas veículos com ano de fabricação superior a 2014) para análise da efetividade de ambos equipamentos de segurança após a implementação total em 2014. Dados pertencentes aos anos anteriores aos que foram estabelecidos como período inicial não foram utilizados pelas inconsistências nos registros feitos pela PRF.  
-
-<p>O objetivo deste documento é avaliar o impacto da obrigatoriedade do Airbag e ABS na severidade dos sinistros de trânsito. A pesquisa utilizou dados de sinistros nas rodovias federais brasileiras disponibilizados pela da Polícia Rodoviária Federal. 
-
-# Metodologia  
-***  
-
-<p>Nesta seção será apresentado as especificações que foram pré-estabelecidas na base de dados, de forma que se tenha um menor erro possível relativo as generalizações. Além de apresentar os conceitos estatísticos que serão utilizados no decorrer do trabalho.  
-<p>A partir da base de dados da PRF, foi gerado duas bases de dados idênticas (cópias da base original), sendo a base de dados para avaliar o impacto do Airbag e a segunda para avaliar o impacto do ABS. Essa partição fez-se necessária para que sejam realizados filtros diferentes e únicos em cada uma.   
-
-## Seleção dos tipos de veículos  
-
-<p>A base de dados fornecida pela PRF é relativa às vítimas dos sinistros de trânsito ocorridos em rodovias federais, onde cada observação representa uma vítima do sinistro. Portando há diversas categorias de veículos, como por exemplo: charrete, carro de mão, bicicleta, entre outros.  
-<p>Para que seja avaliado a implementação do uso de Air bag e ABS foram filtrados ambas as base de dados de forma a conter apenas os sinistros relativos a automóveis e utilitários, possibilitando uma base de comparação mais uniforme, tendo em vista que o porte do veículo é capaz de impactar na severidade do sinistro.  
-
-## Seleção do período de análise  
-
-<p>Visando retirar da análise o período de transição da obrigatoriedade do airbag e ABS e obter períodos antes e depois da obrigatoriedade bem definidos, foram utilizados os dados de sinistros dos anos de 2007 e 2008 como período "antes" da obrigatoriedade e dados de 2014 a 2023 como período "depois" da mesma.  
-
-## Seleção do ano de fabricação  
-
-<p>Como estes dados são atribuídos pelos agentes da PRF, existe o fator de erro humano que ocasionou em valores discrepantes. Portando para as base de dados relativas aos anos 2007 e 2008, foi considerado que o ano de fabricação do veículo fosse entre 1946 e 2008.  
-<p>Para os dados dos anos de 2014 a 2023 foi considerado que o ano de fabricação fosse superior ao ano de 2014, de forma a garantir que estes possuam o Air bag e o ABS devido as resolução estabelecidas pelo CONTRAN.  
-
-## Seleção dos tipos de sinistros  
-
-<p> Como a resolução 311/09 previa a obrigatoriedade do Air bag sendo instalados na posição frontal do veículo, foi considerado para a base de dados do Air bag apenas sinistros que ocorreram colisão com objeto, colisaõ frontal, colisão traseira ou engavetamentos. Já para a base de dados do ABS foi considerado todos os tipos de sinistros.  
-
-## Seleção dos ocupantes  
-
-<p>Para a base do ABS foi considerado todos os ocupantes, enquanto para a base de dados do Air bag foi considerado apenas os condutores para se avaliar o impacto.  
-
-## Seleção do estado físico das vítimas  
-
-<p>Foi necessário realizar esse filtro, pois antes de 2014 a PRF realiza o registro de todos os sinistros, independente da severidade do mesmo, mas a partir deste ano foi implantado o e-DAT (Declaração de Acidentes de Trânsito) que, em sinistros sem vítimas, quem deve realizar o registro destes sinistros são os próprios envolvidos, de modo que a partir deste ano a PRF não realizava mais o registro do boletim de ocorrência convencional (LPAT) no local do sinistro sem vítima.
-<p>Portanto foi filtrado, em ambas as bases, que em todos os casos que houvessem vítimas ilesas teriam que estar classificados como sinistros com vítimas, para evitar essa incongruência entre os anos de 2007 e 2008 com os anos de 2014 à 2023.  
-
-## Análises estatísticas  
-
-<p>Para este trabalho foi utilizado o teste Qui-Quadrado e foi feito a Análise de Correspondência (ANACOR). O teste Qui-Quadro é um teste de hipóteses que tem por finalidade avaliar a associação entre variáveis categóricas, onde seu resultado será apresentado por um p-valor que, dependendo deste, será rejeitado ou não rejeitado (a hipótese nula é que as variáveis não possuem associação entre si), enquanto a ANACOR é uma análise que se baseia na tabela de contingência para criar um gráfico, onde seja possível visualizar tais associações entre as variáveis categóricas.  
-
-# Resultados  
-***  
-
-<p>Nessa seção será apresentado os resultados deste estudo, sendo: a proporção do estado da vítima comparando com o período antes e depois, tanto do ABS quanto Air bag; os testes qui-quadrado para verificar se existe a associação entre as variáveis; e a análise de correspondência para obter uma visualização gráfica dessa associação.  
-
-## Proporção dos Estado Físico da Vítima  
-
-<p>Para avaliar a proporção do estado físico da vítima antes e depois da obrigatoriedade, foram feitos dois gŕaficos de barras relativos a porcentagem para demonstrar tal aumento ou diminuição dos casos. O gráfico abaixo (@fig-grafico-ABS) apresenta a proporção do estado físico da vítima, mostrando os percentuais antes e depois da obrigatoriedade do ABS.  
-
-```{r, include=FALSE, warning=FALSE, message=FALSE}
 library(tidyverse)
 library(onsvplot)
 library(FactoMineR)
@@ -183,10 +119,10 @@ acidentes2023$km <- as.numeric(acidentes2023$km)
 
 # Unindo todos os dataframes em uma base de dados ----
 dados <- bind_rows(acidentes2007,acidentes2008,
-                                 acidentes2014,acidentes2015,
-                                 acidentes2016,acidentes2017,acidentes2018,
-                                 acidentes2019,acidentes2020,acidentes2021,
-                                 acidentes2022,acidentes2023)
+                   acidentes2014,acidentes2015,
+                   acidentes2016,acidentes2017,acidentes2018,
+                   acidentes2019,acidentes2020,acidentes2021,
+                   acidentes2022,acidentes2023)
 # Criando coluna antes e depois da obrigatoriedade  
 dados$periodo <- ifelse(
   dados$ano <= 2008,
@@ -208,13 +144,13 @@ dados_abs <- dados %>%
 # Selecionando ano de fabricação ----
 dados_abs_antes <- 
   dados_abs %>% 
-    filter(periodo == "antes") %>% 
-    filter(ano_fabricacao_veiculo %in% c(1936:2008))
+  filter(periodo == "antes") %>% 
+  filter(ano_fabricacao_veiculo %in% c(1936:2008))
 
 dados_abs_depois <- 
   dados_abs %>% 
-    filter(periodo == "depois") %>% 
-    filter(ano_fabricacao_veiculo %in% c(2014:2023))
+  filter(periodo == "depois") %>% 
+  filter(ano_fabricacao_veiculo %in% c(2014:2023))
 
 dados_abs <- bind_rows(dados_abs_antes, dados_abs_depois)
 
@@ -291,16 +227,16 @@ dados_airbag$tipo_acidente[dados_airbag$tipo_acidente == ""] <- NA
 
 dados_airbag <- 
   dados_airbag %>% 
-    filter(tipo_acidente == "Colisao com objeto"| 
-             tipo_acidente == "Colisao frontal"| 
-             tipo_acidente == "Colisao traseira"|
-             tipo_acidente == "Engavetamento")
+  filter(tipo_acidente == "Colisao com objeto"| 
+           tipo_acidente == "Colisao frontal"| 
+           tipo_acidente == "Colisao traseira"|
+           tipo_acidente == "Engavetamento")
 # Seleção dos ocupantes ----
 dados_abs #todos os ocupantes
 
 dados_airbag <- 
   dados_airbag %>% 
-    filter(tipo_envolvido == "Condutor")
+  filter(tipo_envolvido == "Condutor")
 # Seleção do estado físico da vítima ----
 dados_abs <- dados_abs %>% 
   mutate(classificacao_acidente = dplyr::recode(classificacao_acidente,
@@ -370,7 +306,7 @@ dados_airbag$estado_fisico[dados_airbag$estado_fisico == ""] <- "ignorado"
 
 dados_abs_ferido_leve <- 
   dados_abs %>% 
-    filter(estado_fisico == "ferido leve")
+  filter(estado_fisico == "ferido leve")
 
 dados_abs_ferido_grave <- 
   dados_abs %>% 
@@ -382,10 +318,10 @@ dados_abs_morto <-
 
 dados_abs_ileso <- 
   dados_abs %>% 
-    filter(estado_fisico == "ileso" & 
-             (classificacao_acidente == "com vitimas fatais"|
-             classificacao_acidente == "com vitimas feridas"))
-  
+  filter(estado_fisico == "ileso" & 
+           (classificacao_acidente == "com vitimas fatais"|
+              classificacao_acidente == "com vitimas feridas"))
+
 dados_abs <- bind_rows(dados_abs_ferido_leve,dados_abs_ferido_grave,dados_abs_morto,dados_abs_ileso)
 
 dados_airbag_ferido_leve <- 
@@ -407,177 +343,3 @@ dados_airbag_ileso <-
               classificacao_acidente == "com vitimas feridas"))
 
 dados_airbag <- bind_rows(dados_airbag_ferido_leve,dados_airbag_ferido_grave,dados_airbag_morto,dados_airbag_ileso)
-```
-
-```{r, echo=FALSE}
-#| label: fig-grafico-ABS
-#| fig-cap: Proporção do Estado físico da vítima antes e depois da obrigatoriedade do ABS.
-# Proporção dos estados fisicos antes e depois ----
-Prop_ef_abs_antes <- as.data.frame(table(dados_abs$estado_fisico[dados_abs$periodo == "antes"]))
-Prop_ef_abs_depois <- as.data.frame(table(dados_abs$estado_fisico[dados_abs$periodo == "depois"]))
-
-Prop_ef_airbag_antes <- as.data.frame(table(dados_airbag$estado_fisico[dados_airbag$periodo == "antes"]))
-Prop_ef_airbag_depois <- as.data.frame(table(dados_airbag$estado_fisico[dados_airbag$periodo == "depois"]))
-
-Prop_ef_abs_antes <- 
-  Prop_ef_abs_antes %>% 
-    mutate(proporção = Freq/sum(Freq)) %>% 
-    mutate(variavel = "ABS Antes")
-
-Prop_ef_abs_depois <- 
-  Prop_ef_abs_depois %>% 
-  mutate(proporção = Freq/sum(Freq)) %>% 
-  mutate(variavel = "ABS depois")
-
-Prop_ef_airbag_antes <- 
-  Prop_ef_airbag_antes %>% 
-  mutate(proporção = Freq/sum(Freq)) %>% 
-  mutate(variavel = "Airbag Antes")
-
-Prop_ef_airbag_depois <- 
-  Prop_ef_airbag_depois %>% 
-  mutate(proporção = Freq/sum(Freq)) %>% 
-  mutate(variavel = "Airbag Depois")
-
-Prop_ef_abs <- bind_rows(Prop_ef_abs_antes,Prop_ef_abs_depois)
-Prop_ef_airbag <- bind_rows(Prop_ef_airbag_antes,Prop_ef_airbag_depois)
-
-Prop_ef_abs %>% 
-  ggplot(aes(x = reorder(Var1, proporção), y = proporção))+
-  geom_col(fill = "orange2", color = "black")+
-  geom_text(aes(y = proporção, label = scales::percent(proporção)), vjust = -0.5,
-            position = position_dodge(width = 1)) +
-  facet_wrap(~ variavel)+
-  theme_bw()+
-  labs(x = "Estado físico", y = "Proporção")
-
-```  
-<p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
-
-<p> Com base no gráfico acima foi possível verificar que:  
-
-- A proporção de "morto" diminuiu 1.1%;
-- A proporção de "ferido grave" diminuiu 6.6%;
-- A proporção de "ferido leve" diminuiu 5%;
-- A proporção de "ileso" aumentou 12.7%.
-
-<p> Já o gráfico abaixo (@fig-grafico-Airbag) apresenta a proporção para a base relativa ao Air bag.  
-
-```{r, echo=FALSE}
-#| label: fig-grafico-Airbag
-#| fig-cap: Proporção do Estado físico da vítima antes e depois da obrigatoriedade do Air bag.
-Prop_ef_airbag %>% 
-  ggplot(aes(x = reorder(Var1, proporção), y = proporção))+
-  geom_col(fill = "orange2", color = "black")+
-  geom_text(aes(y = proporção, label = scales::percent(proporção)), vjust = -0.5,
-            position = position_dodge(width = 1)) +
-  facet_wrap(~ variavel)+
-  theme_bw()+
-  labs(x = "Estado físico", y = "Proporção")
-```  
-<p style="font-size: 16px;">Fonte: Os autores (2024)</p>
-
-<p>Neste gráfico, ficou nítido que a proporção do estado físico "morto" diminuiu 2.21%, o "ferido grave" diminuiu 5.99%, e o "ferido leve" diminuiu 1.9%, enquanto apenas o estado físico "ileso" teve um aumento de 10.11%. Esse aumento na proporção dos "ilesos" na base do ABS e do Air bag significa que houve uma redução na severidade dos sinistros de trânsito.
-
-
-## Teste Qui-Quadrado  
-```{r, include=FALSE}
-# Tabela para o teste ----
-tab_abs <- table(dados_abs$estado_fisico, dados_abs$periodo)
-tab_airbag <- table(dados_airbag$estado_fisico, dados_airbag$periodo)
-
-tab_abs
-tab_airbag
-
-
-```
-
-<p>O teste Qui-Quadrado é um teste de hipóteses que tem por finalidade verificar a associação entre variáveis categóricas, as suas hipóteses serão apresentadas abaixo:  
-<br>  
-$$
-Hipótese\ nula\ (H_0) = Não\ há\ associação\ entre\ os\ grupos
-$$
-$$
-Hipótese\ alternativa\ (H_1) = Os\ grupos\ estão\ associados
-$$  
-<p>A partir dessas hipóteses, deve-se definir um nível de significância para que então se aceite ou rejeite a hipótese nula a depender do p-valor gerado. Neste estudo verificaremos a associação entre a variável "estado físico da vítima" e a variável "período antes ou depois da obrigatoriedade" e utilizaremos um nível de significância de 0.05, ou seja, a probabilidade de que um resultado estatisticamente significativo ocorra por mero acaso é de 5%. Para realizar esse teste foi utilizado a função `chisq.test()` no R. Antes de realizar o teste Qui-Quadrado é necessário gerar a tabela de contingência entre as duas variáveis a serem analisadas. O resultado do teste para o ABS é apresentado abaixo:
-
-```{r, echo=FALSE}
-chisq.test(tab_abs)
-```  
-<br>  
-<p>Como o p-valor resultou em menor que 2.2^-16^ (muito próximo de zero) iremos rejeitar a hipótese nula e afirmar que as variáveis possuem associação estatisticamente comprovada, isto é, o estado físico que a vítima se encontra após o sinistro possui uma associação com o período de tempo antes e depois da obrigatoriedade da implantação do ABS.  
-<p>Para a base de Air bag o resultado será apresentado abaixo:  
-
-```{r, echo=FALSE}
-chisq.test(tab_airbag)
-```  
-<br>  
-<p>O p-valor deste teste também resultou próximo de zero (2.2^-16^), demonstrando que ambas as bases possuem associação entre as variáveis "estado físico" e "período".  
-
-## Análise de Correspondência  
-
-<p>A análise de Correspondência irá facilitar a visualização da associação que foi provada na seção anterior. Essa análise também se baseia na tabela de contingência e permite a elaboração do mapa perceptual, em que as categorias das variáveis são plotadas segundo duas dimensões. Aquelas categorias mais próximas umas das outras representam um maior nível de associação.  
-```{r, include=FALSE}
-# Análise de correspondência ----
-CA_abs <- dados_abs %>% 
-  select(estado_fisico, periodo)
-
-CA_airbag <- dados_airbag %>% 
-  select(estado_fisico, periodo)
-
-res_CA_abs <- MCA(CA_abs, ncp = 4, graph = FALSE)
-#fviz_mca_biplot(res_CA_abs, geom.ind = "none")
-
-res_CA_airbag <- MCA(CA_airbag, ncp = 4, graph = FALSE)
-#fviz_mca_biplot(res_CA_airbag, geom.ind = "none")
-
-abs_ca <- data.frame(res_CA_abs$var$coord, variavel = c("estado físico","estado físico","estado físico",
-                                                        "estado físico","período","período"))
-airbag_ca <- data.frame(res_CA_airbag$var$coord, variavel = c("estado físico","estado físico","estado físico",
-                                                              "estado físico","período","período"))
-
-
-```
-
-<p>O mapa perceptual das variáveis "estado físico" e "período" para a base de dados ABS está apresentado abaixo:
-
-```{r, echo=FALSE}
-#| label: fig-grafico-ABS-ANACOR
-#| fig-cap: Mapa perceptual da base de dados do ABS nas variáveis "estado físico" e "período".
-ggplot(data = abs_ca, aes(x = Dim.1, y = Dim.2, color = variavel))+
-  geom_point()+
-  geom_label(label = rownames(abs_ca), label.size = 0.5, position = position_nudge(y = 0.15))+
-  labs(x = "Dim1 (28.6%)", y = "Dim2 (25%)")+
-  geom_hline(yintercept = 0, colour = "black", lty="longdash") + 
-  geom_vline(xintercept = 0, colour = "black", lty="longdash") + 
-  theme_onsv()
-```  
-<p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
-<p>Pelo gráfico da @fig-grafico-ABS-ANACOR ficou nítido que as classificações "ileso" e "depois" estão mais associadas, além das classificações "morto" e "antes" que estão altamente associadas (classificação "antes" sobrepôs a classificação "morto"), enquanto as categorias "ferido grave" e "ferido leve" estão menos associadas ao período em relação as outras.  
-<p>O gráfico da @fig-grafico-airbag-ANACOR relativo ao mapa perceptual para a base de dados do Air bag será apresentado abaixo:   
-
-```{r,echo=FALSE}
-#| label: fig-grafico-airbag-ANACOR
-#| fig-cap: Mapa perceptual da base de dados do Air bag nas variáveis "estado físico" e "período".
-ggplot(data = airbag_ca, aes(x = Dim.1, y = Dim.2, color = variavel))+
-  geom_point()+
-  geom_label(label = rownames(airbag_ca), label.size = 0.5, position = position_nudge(y = 0.25))+
-  labs(x = "Dim1 (28.3%)", y = "Dim2 (25%)")+
-  geom_hline(yintercept = 0, colour = "black", lty="longdash") + 
-  geom_vline(xintercept = 0, colour = "black", lty="longdash") + 
-  theme_onsv()
-```
-<p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
-<p>Nele há também a associação clara entre as categorias "depois" e "ileso", enquanto as categorias "ferido grave" e "morto" estão mais próximas do "antes"; já a classificação "ferido leve" se encontra entre os dois períodos.  
-
-# Conclusão  
-***  
-
-<p>Como conclusão, tem-se que a partir dos testes e análises estatísticas foram possíveis verificar que:  
-
-- Após a obrigatoriedade do ABS e do Air bag houve uma redução na proporção dos sinistros com vítimas feridas leves, grave ou mortas, enquanto houve um aumento na proporção das vítimas ilesas;
-- Foi comprovado estatísticamente a partir do teste Qui-Quadrado que as variáveis "estado físico" e "período antes e depois da obrigatoriedade" possuem uma associação significativa entre si;
-- Há uma maior associação entre as categorias "ilesos" e "depois", enquanto a classificação "depois" permanece mais próximo de "ferido grave" e "morto".  
-
-<p>Vale ressaltar que estas associações foram feitos considerando o período "antes" e "depois" da obrigatoriedade do ABS e Air bag, mas que não são os únicos fatores que contribuiram para este resultado. Há diversas outras medidas que influenciaram nessa diminuição da severidade dos sinistros e na associação entre as variáveis, como por exemplo uma melhora na infraestrutura viária. Mas de fato a implementação do ABS e do Air bag são um dos fatores primordiais para estes valores estatísticos.  
